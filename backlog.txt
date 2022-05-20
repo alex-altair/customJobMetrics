@@ -3,3 +3,4 @@
 - make ip command configurable, e.g. ip_cmd = '/usr/sbin/ip'
 - make pbs_home configurable or fetch it automatically if not configured
 - implement periodic event which updates the usage regularily
+- stat info probably only needed for finished jobs
