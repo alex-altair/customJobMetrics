@@ -1,0 +1,5 @@
+- for resources if0_rx_bytes and if0_tx_bytes have a mapping in the hook's json file to the actual interfaces
+- are ip interface names constant and the same accross all hosts, if not how do we determine the interface we want to monitor?
+- make ip command configurable, e.g. ip_cmd = '/usr/sbin/ip'
+- make pbs_home configurable or fetch it automatically if not configured
+- implement periodic event which updates the usage regularily
