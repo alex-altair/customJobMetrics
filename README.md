@@ -19,4 +19,21 @@ Let PBS Professional collect and report custom job metrics
     7190366812 54186370 0       0       0       0
 ```
 
+# Implementation of collecting and reporting ip stats for single host jobs
+
+## Architecture
+
+# Configuration of the customJobMetrics hook
+
+Create and import the hook and its json config file
+
+```
+qmgr -c "create hook customJobMetrics"
+qmgr -c "set hook customJobMetrics enabled= True"
+qmgr -c "set hook customJobMetrics event = 'execjob_begin,execjob_epilogue,execjob_end,exechost_periodic'"
+qmgr -c "import hook customJobMetrics application/x-python default customJobMetrics.py"
+qmgr -c "import hook customJobMetrics application/x-config default customJobMetrics.json"
+```
+
+
 
